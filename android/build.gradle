@@ -8,7 +8,7 @@ buildscript {
     // module dependency in an application project.
     if (project == rootProject) {
         repositories {
-            mavenCentral()
+            maven { url 'https://jitpack.io' }
             google()
         }
 
@@ -43,5 +43,5 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.eightbitlab:blurview:1.6.6'
+    implementation 'com.github.Dimezis:BlurView:version-1.6.6'
 }
