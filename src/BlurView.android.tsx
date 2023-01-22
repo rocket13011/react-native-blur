@@ -33,7 +33,7 @@ const BlurView = forwardRef<View, BlurViewProps>(
     children,
     style,
     ...rest
-  }) => {
+  },ref) => {
     useEffect(() => {
       DeviceEventEmitter.addListener('ReactNativeBlurError', (message) => {
         throw new Error(`[ReactNativeBlur]: ${message}`);
